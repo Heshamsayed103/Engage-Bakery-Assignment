@@ -1,0 +1,187 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+/* Header Section */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/drew-coffman-1872.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.logo img {
+  width: 50%;
+  cursor: pointer;
+}
+
+.nav-link {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end; /* Use 'flex-end' for alignment */
+  font-family: "Alegreya", serif;
+  font-size: 18px;
+  font-weight: 400; /* Removed 'px' as it's invalid here */
+  line-height: 32px;
+}
+
+.nav-link a {
+  transition: color 1s; /* Clearer transition */
+  color: azure;
+  text-decoration: none; /* Ensure links have no underline */
+}
+
+.nav-link a:hover {
+  color: #d1a054;
+}
+
+.navresponsive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navresponsive a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px; /* Adjusted padding for better spacing */
+}
+
+nav {
+  position: fixed;
+  top: 0; /* Fixed typo '/' before 'top' */
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Hero Section */
+.hero-content {
+  position: relative; /* Ensure positioning works */
+  top: 35%;
+}
+
+.hero-content p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 400; /* Removed 'px' as it's invalid */
+  line-height: 41px;
+  color: white;
+}
+
+#specialfont {
+  font-family: "Alegreya", serif;
+  font-weight: 500; /* Removed 'px' */
+  font-size: 76px;
+  line-height: 91px;
+}
+
+.buttons {
+  line-height: 32px;
+  font-size: 17px;
+}
+
+.btn-primary {
+  background-color: #d1a054;
+  color: white;
+  border: 2px solid #d1a054;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-outline-primary:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+/* About Section */
+.who-icon,
+.who-icon2 {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ccc;
+}
+
+.who-icon2 {
+  background-color: #d1a054;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* Footer Section */
+footer {
+  background-color: gray;
+}
+
+#contact-d {
+  background-image: url(../Images/contact-details-map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  width: fit-content;
+}
+
+.last-img {
+  background-color: #353330;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.last-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adds spacing between icons */
+}
+
+.last-icons .icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.last-icons .icon-circle:hover {
+  background-color: #555;
+  color: #ffc107;
+}
+
+.last-icons .icon-circle i {
+  font-size: 1.2rem;
+}
